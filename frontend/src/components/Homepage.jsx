@@ -1,8 +1,22 @@
 import React from "react";
-import Unilogo from "../../images/unilogo.svg";
-import Studentimg from "../../images/studentimage.svg";
-import Adminimg from "../../images/adminimage.svg";
+import Unilogo from "../images/unilogo.svg";
+import Studentimg from "../images/studentimage.svg";
+import Adminimg from "../images/adminimage.svg";
+import { useNavigate } from 'react-router-dom';
+
+
 const Homepage = () => {
+  const navigate = useNavigate();
+
+  const gotoAdmin = () => {
+    navigate("/adminlogin");
+  }
+
+  const gotoStudent = () => {
+    navigate("/studentlogin");
+  }
+
+
   return (
     <div className="container mt-5">
       <div className="mx-auto justify-center">
@@ -20,7 +34,7 @@ const Homepage = () => {
                 />
               </div>
               <div className="relative mt-[-40px]">
-                <button class="bg-[#3B1234] hover:bg-[#F1B81F] text-white font-bold py-2 px-4 w-full h-[100px] rounded-3xl text-2xl">
+                <button class="bg-[#3B1234] hover:bg-[#F1B81F] text-white font-bold py-2 px-4 w-full h-[100px] rounded-3xl text-2xl" onClick={gotoStudent}>
                   Student
                 </button>
               </div>
@@ -34,7 +48,7 @@ const Homepage = () => {
                 />
               </div>
               <div className="relative mt-[-40px]">
-                <button class="bg-[#3B1234] hover:bg-[#F1B81F] text-white font-bold py-2 px-4 w-full h-[100px] rounded-3xl text-2xl">
+                <button class="bg-[#3B1234] hover:bg-[#F1B81F] text-white font-bold py-2 px-4 w-full h-[100px] rounded-3xl text-2xl" onClick={gotoAdmin}>
                   Admin
                 </button>
               </div>

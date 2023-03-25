@@ -1,5 +1,5 @@
 import React from "react";
-import { Unilogo } from "../../images";
+import { Unilogo } from "../images";
 
 const Adminlogin = () => {
   return (
