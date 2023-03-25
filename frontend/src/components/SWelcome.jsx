@@ -1,6 +1,8 @@
 import React from "react";
 import { CircularProgressbar, buildStyles } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
+import TodoContainer from '../components/todolist/App/TodoContainer'
+
 
 const SWelcome = () => {
   const percentage = 3.32;
@@ -114,8 +116,8 @@ const SWelcome = () => {
             </div>
           </div>
         </div>
-        <div class="basis-1/4">
-          {/* todocontainer */}
+        <div class="basis-1/4 border-2 p-2 border-zinc-900">
+        <TodoContainer/>
         </div>
       </div>
     </div>
