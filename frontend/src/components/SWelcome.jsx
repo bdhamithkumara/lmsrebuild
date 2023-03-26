@@ -9,8 +9,8 @@ const SWelcome = () => {
 
   return (
     <div>
-      <div class="flex flex-row">
-        <div class="basis-3/4">
+      <div className="flex flex-row">
+        <div className="basis-3/4">
           <div className="w-[150px] h-[150px] text-center mx-auto">
             <CircularProgressbar
               styles={buildStyles({
