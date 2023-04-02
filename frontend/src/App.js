@@ -13,7 +13,9 @@ import AAddResult from './pages/AAddResult'
 import AAddCourses from './pages/AAddCourses'
 import AAddNews from './pages/AAddNews'
 import ACreateUserAcc from './pages/ACretateUAcc'
-
+import LectureDashboard from './pages/Ldashboard'
+import LMain from './pages/LMain'
+import LClassWork from './pages/LClassWork';
 
 function App() {
   return (
@@ -35,6 +37,9 @@ function App() {
           <Route path='/AddCourses' element={<AAddCourses />} />
           <Route path='/AddNews' element={<AAddNews />} />
           <Route path='/ACreateUserAcc' element={<ACreateUserAcc />} />
+          <Route path='/Ldashboard' element={<LectureDashboard />} />
+          <Route path='/LMain' element={<LMain />} /> 
+          <Route path='/LClassWorks' element={<LClassWork />} />
 
         </Routes>
       </BrowserRouter>

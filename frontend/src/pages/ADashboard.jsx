@@ -1,10 +1,12 @@
 import React from 'react'
 import ALayout from './ALayout'
-import AWelcome from '../components/AWelcome'
+
+import AAddResultDetail from '../components/AAddResultDetail'
+
 const ADashboard = () => {
   return (
     <ALayout>
-      <AWelcome/>
+      <AAddResultDetail/>
     </ALayout>
   )
 }
