@@ -1,7 +1,16 @@
 import React from "react";
 import { Unilogo } from "../images";
+import { useNavigate } from 'react-router-dom';
 
 const Adminlogin = () => {
+
+  const navigate = useNavigate();
+
+  const gotoAdmindashboard = () => {
+    navigate("/ADashboard");
+  }
+
+
   return (
     <div className="container mt-5">
       <div className="mx-auto justify-center">
@@ -42,7 +51,9 @@ const Adminlogin = () => {
             </div>
             <div className="mt-[60px] flex mx-auto">
               <div className="mx-auto">
-                <button class="bg-[#3B1234] hover:bg-[#F1B81F] text-white font-bold py-2 px-4 w-[250px] h-[55px] rounded-3xl text-2xl">
+                <button class="bg-[#3B1234] hover:bg-[#F1B81F] text-white font-bold py-2 px-4 w-[250px] h-[55px] rounded-3xl text-2xl"
+                  onClick={gotoAdmindashboard}
+                >
                   Login
                 </button>
               </div>

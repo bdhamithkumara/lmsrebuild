@@ -8,6 +8,11 @@ import StudentCourse from './pages/SCourse'
 import StudentResult from './pages/SResult'
 import StudentCalGpa from './pages/SGpacal'
 import StudentNews from './pages/SNews'
+import ADashboard from './pages/ADashboard';
+import AAddResult from './pages/AAddResult'
+import AAddCourses from './pages/AAddCourses'
+import AAddNews from './pages/AAddNews'
+import ACreateUserAcc from './pages/ACretateUAcc'
 
 
 function App() {
@@ -25,6 +30,12 @@ function App() {
           <Route path='/SResult' element={<StudentResult />} />
           <Route path='/SGpacal' element={<StudentCalGpa />} />
           <Route path='/SNews' element={<StudentNews />} />
+          <Route path='/ADashboard' element={<ADashboard />} />
+          <Route path='/AddResult' element={<AAddResult />} />
+          <Route path='/AddCourses' element={<AAddCourses />} />
+          <Route path='/AddNews' element={<AAddNews />} />
+          <Route path='/ACreateUserAcc' element={<ACreateUserAcc />} />
+
         </Routes>
       </BrowserRouter>
     </div>
