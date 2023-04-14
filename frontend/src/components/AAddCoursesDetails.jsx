@@ -1,8 +1,42 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { Paper } from '@mui/material';
 
 const AAddCoursesDetails = () => {
+  const [academicYear, setAcademicYear] = useState("");
+  const [subjectCode, setSubjectCode] = useState("");
+  const [subjectName, setSubjectName] = useState("");
+  const [lectureId, setLectureId] = useState("");
+  const [lectureName, setLectureName] = useState("");
+  const [AllCourse,setAllCourse] = useState([]);
 
-  
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    const getalldata = {academicYear,subjectCode,subjectName,lectureId,lectureName};
+    console.log(getalldata);
+
+    fetch("http://localhost:8080/course/add", {
+      method: "POST",
+      headers: { "content-Type": "application/json" },
+      body: JSON.stringify(getalldata),
+    }).then(() => {
+      console.log("data added");
+    });
+    setAcademicYear("");
+    setSubjectCode("");
+    setSubjectName("");
+    setLectureId("");
+    setLectureName("");
+
+  }
+
+  useEffect(() => {
+    fetch("http://localhost:8080/course/getall")
+      .then((res) => res.json())
+      .then((result) => {
+        setAllCourse(result);
+      });
+  }, []);
 
   return (
     <div>
@@ -14,8 +48,8 @@ const AAddCoursesDetails = () => {
             className="mt-1 px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-[#F1B81F] focus:ring-[#F1B81F] block w-full rounded-md sm:text-sm focus:ring-1"
             placeholder="Academic Year"
             required
-            // value={newstitle}
-            // onChange={(e) => setNewstitle(e.target.value)}
+            value={academicYear}
+            onChange={(e) => setAcademicYear(e.target.value)}
           />
           <input
             type="text"
@@ -23,8 +57,8 @@ const AAddCoursesDetails = () => {
             className="mt-1 px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-[#F1B81F] focus:ring-[#F1B81F] block w-full rounded-md sm:text-sm focus:ring-1"
             placeholder="Subject Code"
             required
-            // value={hashtags}
-            // onChange={(e) => setHashtag(e.target.value)}
+            value={subjectCode}
+            onChange={(e) => setSubjectCode(e.target.value)}
           />
           <input
             type="text"
@@ -32,8 +66,8 @@ const AAddCoursesDetails = () => {
             className="mt-1 px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-[#F1B81F] focus:ring-[#F1B81F] block w-full rounded-md sm:text-sm focus:ring-1"
             placeholder="Subject Name"
             required
-            // value={hashtags}
-            // onChange={(e) => setHashtag(e.target.value)}
+            value={subjectName}
+            onChange={(e) => setSubjectName(e.target.value)}
           />
           <input
             type="text"
@@ -41,8 +75,8 @@ const AAddCoursesDetails = () => {
             className="mt-1 px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-[#F1B81F] focus:ring-[#F1B81F] block w-full rounded-md sm:text-sm focus:ring-1"
             placeholder="Lecturer ID"
             required
-            // value={hashtags}
-            // onChange={(e) => setHashtag(e.target.value)}
+            value={lectureId}
+            onChange={(e) => setLectureId(e.target.value)}
           />
           <input
             type="text"
@@ -50,43 +84,32 @@ const AAddCoursesDetails = () => {
             className="mt-1 px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-[#F1B81F] focus:ring-[#F1B81F] block w-full rounded-md sm:text-sm focus:ring-1"
             placeholder="Lecturer Name"
             required
-            // value={hashtags}
-            // onChange={(e) => setHashtag(e.target.value)}
+            value={lectureName}
+            onChange={(e) => setLectureName(e.target.value)}
           />
 
           <button
             className="rounded-full bg-[#F1B81F] text-black p-2  w-[150px]"
-            // onClick={handleSubmit}
+            onClick={handleSubmit}
           >
             Save
           </button>
         </form>
       </div>
-      {/* <div>
-      {allnews.map((mapgetall) => (
+      <div>
+      {AllCourse.map((allCourse) => (
         <Paper
           elevation={6}
           style={{ margin: "10px", padding: "15px", textAlign: "left" }}
-          key={mapgetall.id}
+          key={allCourse.id}
         >
-          Id : {mapgetall.id} <br />
-          News Title : {mapgetall.newstitle} <br />
-          Hash Tags : {mapgetall.hashtags} <br />
-          <div>
-          Content : {mapgetall.content.length > MAX_LENGTH ? (
-              <div>
-                {`${mapgetall.content.substring(0, MAX_LENGTH)}...`}
-                <a href="#"> Read more </a>
-              </div>
-            ) : (
-              <p>{mapgetall.content}</p>
-            )}
-          </div>
-           
-          Date : {mapgetall.today} <br />
+          Subject Code : {allCourse.subjectCode} <br />
+          Subject Name : {allCourse.subjectName} <br />
+          Lecture ID : {allCourse.lectureId} <br />
+          Lecture Name : {allCourse.lectureName} <br />
         </Paper>
       ))}
-    </div> */}
+    </div>
     </div>
   );
 };
