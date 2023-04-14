@@ -43,6 +43,7 @@ const ACretateUAccDetails = () => {
                 className="mt-1 px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-[#F1B81F] focus:ring-[#F1B81F] block w-full rounded-md sm:text-sm focus:ring-1"
                 placeholder="username"
                 value={username}
+                required
                 onChange={(e) => setUsername(e.target.value)}
               />
               <input
@@ -50,6 +51,7 @@ const ACretateUAccDetails = () => {
                 name="password"
                 className="mt-1 px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-[#F1B81F] focus:ring-[#F1B81F] block w-full rounded-md sm:text-sm focus:ring-1"
                 placeholder="password"
+                required
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
               />
