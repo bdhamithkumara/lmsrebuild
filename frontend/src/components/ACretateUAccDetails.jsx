@@ -69,7 +69,7 @@ const ACretateUAccDetails = () => {
                 </select>
               </div>
 
-              <button className="rounded-full bg-[#F1B81F] text-black p-2 mt-5" onClick={handleSubmit}>
+              <button   className="rounded-full bg-[#F1B81F] text-black p-2 mt-2  w-[150px]" onClick={handleSubmit}>
                 Save 
               </button>
             </label>
