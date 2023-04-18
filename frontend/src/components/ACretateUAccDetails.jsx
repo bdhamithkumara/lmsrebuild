@@ -59,7 +59,7 @@ const ACretateUAccDetails = () => {
               <div className="relative w-full ">
                 <select
                   className="w-full px-3 py-2 text-slate-400  bg-white border rounded-md shadow-sm outline-none  focus:border-[#F1B81F]"
-                  defaultValue={type[0]}
+                  // defaultValue={type[0]}
                   onChange={(e) => setType(e.target.value)}
                 >
                   <option className="text-gray-500">select the type</option>

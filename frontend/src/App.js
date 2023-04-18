@@ -49,13 +49,3 @@ function App() {
 
 export default App;
 
-// <Router>
-// <Routes>
-//     <Route path='/student/dashboard' element={<Dashboard/>}/>
-//     <Route path='/student/profile' element={<Profile/>}/>
-//     <Route path='/student/course' element={<Course/>}/>
-//     <Route path='/student/result' element={<Result/>}/>
-//     <Route path='/student/gpacal' element={<Gpacal/>}/>
-//     <Route path='/student/news' element={<News/>}/>
-//   </Routes>
-// </Router>

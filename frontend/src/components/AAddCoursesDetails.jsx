@@ -2,8 +2,8 @@ import React, { useEffect, useState } from "react";
 import { Paper } from '@mui/material';
 
 const AAddCoursesDetails = () => {
-  const [academicYear, setAcademicYear] = useState("");
-  const [subjectCode, setSubjectCode] = useState("");
+  const [acedemic_year, setAcademicYear] = useState("");
+  const [subject_code, setSubjectCode] = useState("");
   const [subjectName, setSubjectName] = useState("");
   const [lectureId, setLectureId] = useState("");
   const [lectureName, setLectureName] = useState("");
@@ -12,7 +12,7 @@ const AAddCoursesDetails = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    const getalldata = {academicYear,subjectCode,subjectName,lectureId,lectureName};
+    const getalldata = {acedemic_year,subject_code,subjectName,lectureId,lectureName};
     console.log(getalldata);
 
     fetch("http://localhost:8080/course/add", {
@@ -48,7 +48,7 @@ const AAddCoursesDetails = () => {
             className="mt-1 px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-[#F1B81F] focus:ring-[#F1B81F] block w-full rounded-md sm:text-sm focus:ring-1"
             placeholder="Academic Year"
             required
-            value={academicYear}
+            value={acedemic_year}
             onChange={(e) => setAcademicYear(e.target.value)}
           />
           <input
@@ -57,7 +57,7 @@ const AAddCoursesDetails = () => {
             className="mt-1 px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-[#F1B81F] focus:ring-[#F1B81F] block w-full rounded-md sm:text-sm focus:ring-1"
             placeholder="Subject Code"
             required
-            value={subjectCode}
+            value={subject_code}
             onChange={(e) => setSubjectCode(e.target.value)}
           />
           <input
