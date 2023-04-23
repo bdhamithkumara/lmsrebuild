@@ -21,6 +21,8 @@ public class LogindatController {
 	@Autowired
 	private LoginDataService loginDataService;
 	
+	
+	
 	@PostMapping("/add")
 	public String add(@RequestBody Logindata logindata) {
 		loginDataService.SaveLogindata(logindata);
@@ -31,5 +33,7 @@ public class LogindatController {
 	public List<Logindata> getAllLogindata(){
 		return loginDataService.getAllLogindata();
 	}
+	
+	
 	
 }

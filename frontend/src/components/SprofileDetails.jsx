@@ -39,9 +39,9 @@ const SprofileDetails = () => {
               <div className='mb-3 pr-5'>
               <input className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="faculty" type="text" placeholder="Faculty"/>
               </div>
-              <div className='mb-3 pr-5'>
+              {/* <div className='mb-3 pr-5'>
               <input className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="course" type="text" placeholder="Course"/>
-              </div>
+              </div> */}
               <div className='mb-3 pr-5'>
               <input className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="currentsemester" type="text" placeholder="Current Semester"/>
               </div>

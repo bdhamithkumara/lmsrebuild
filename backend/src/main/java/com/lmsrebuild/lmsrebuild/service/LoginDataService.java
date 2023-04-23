@@ -9,5 +9,7 @@ public interface LoginDataService {
 	public Logindata SaveLogindata(Logindata logindata);
 	
 	public List<Logindata> getAllLogindata();
+	
+	
 
 }

@@ -20,7 +20,6 @@ import LClassWork from './pages/LClassWork';
 function App() {
   return (
     <div>
-
       <BrowserRouter>
         <Routes>
           <Route path='/' element={<Homepage />} />
@@ -40,7 +39,6 @@ function App() {
           <Route path='/Ldashboard' element={<LectureDashboard />} />
           <Route path='/LMain' element={<LMain />} /> 
           <Route path='/LClassWorks' element={<LClassWork />} />
-
         </Routes>
       </BrowserRouter>
     </div>

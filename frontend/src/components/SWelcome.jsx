@@ -30,20 +30,20 @@ const SWelcome = () => {
               <div class="basis-1/2 px-4">
               <div className="w-full h-[100px] border-red-500 border-2 bg-[#3B1234] rounded-2xl text-white">
                   <div className="">
-                    <div className="font-bold text-[20px] pl-2">Level 1 / Semester 1</div>
+                    <div className="font-bold text-[20px] pl-2">Level 1 - Semester 1</div>
                   </div>
                   <div className="mt-[35px] ml-[300px]">
-                    <div className="text-[20px]">GPA:</div>
+                    <div className="text-[20px]">GPA:3.41</div>
                   </div>
                 </div>
               </div>
               <div class="basis-1/2 px-4">
               <div className="w-full h-[100px] border-red-500 border-2 bg-[#3B1234] rounded-2xl text-white">
                   <div className="">
-                    <div className="font-bold text-[20px] pl-2">Level 1 / Semester 1</div>
+                    <div className="font-bold text-[20px] pl-2">Level 1 - Semester 2</div>
                   </div>
                   <div className="mt-[35px] ml-[300px]">
-                    <div className="text-[20px]">GPA:</div>
+                    <div className="text-[20px]">GPA:3.01</div>
                   </div>
                 </div>
               </div>
@@ -52,20 +52,20 @@ const SWelcome = () => {
             <div class="basis-1/2 px-4">
             <div className="w-full h-[100px] border-red-500 border-2 bg-[#3B1234] rounded-2xl text-white">
                   <div className="">
-                    <div className="font-bold text-[20px] pl-2">Level 1 / Semester 1</div>
+                    <div className="font-bold text-[20px] pl-2">Level 2 / Semester 1</div>
                   </div>
                   <div className="mt-[35px] ml-[300px]">
-                    <div className="text-[20px]">GPA:</div>
+                    <div className="text-[20px]">GPA:3.14</div>
                   </div>
                 </div>
               </div>
               <div class="basis-1/2 px-4">
               <div className="w-full h-[100px] border-red-500 border-2 bg-[#3B1234] rounded-2xl text-white">
                   <div className="">
-                    <div className="font-bold text-[20px] pl-2">Level 1 / Semester 1</div>
+                    <div className="font-bold text-[20px] pl-2">Level 2 / Semester 2</div>
                   </div>
                   <div className="mt-[35px] ml-[300px]">
-                    <div className="text-[20px]">GPA:</div>
+                    <div className="text-[20px]">GPA:3.24</div>
                   </div>
                 </div>
               </div>
@@ -74,20 +74,20 @@ const SWelcome = () => {
             <div class="basis-1/2 px-4">
             <div className="w-full h-[100px] border-red-500 border-2 bg-[#3B1234] rounded-2xl text-white">
                   <div className="">
-                    <div className="font-bold text-[20px] pl-2">Level 1 / Semester 1</div>
+                    <div className="font-bold text-[20px] pl-2">Level 3 / Semester 1</div>
                   </div>
                   <div className="mt-[35px] ml-[300px]">
-                    <div className="text-[20px]">GPA:</div>
+                    <div className="text-[20px]">GPA:3.45</div>
                   </div>
                 </div>
               </div>
               <div class="basis-1/2 px-4">
               <div className="w-full h-[100px] border-red-500 border-2 bg-[#3B1234] rounded-2xl text-white">
                   <div className="">
-                    <div className="font-bold text-[20px] pl-2">Level 1 / Semester 1</div>
+                    <div className="font-bold text-[20px] pl-2">Level 3 / Semester 2</div>
                   </div>
                   <div className="mt-[35px] ml-[300px]">
-                    <div className="text-[20px]">GPA:</div>
+                    <div className="text-[20px]">GPA:3.52</div>
                   </div>
                 </div>
               </div>
@@ -96,20 +96,20 @@ const SWelcome = () => {
             <div class="basis-1/2 px-4">
             <div className="w-full h-[100px] border-red-500 border-2 bg-[#3B1234] rounded-2xl text-white">
                   <div className="">
-                    <div className="font-bold text-[20px] pl-2">Level 1 / Semester 1</div>
+                    <div className="font-bold text-[20px] pl-2">Level 4 / Semester 1</div>
                   </div>
                   <div className="mt-[35px] ml-[300px]">
-                    <div className="text-[20px]">GPA:</div>
+                    <div className="text-[20px]">GPA:3.14</div>
                   </div>
                 </div>
               </div>
               <div class="basis-1/2 px-4">
               <div className="w-full h-[100px] border-red-500 border-2 bg-[#3B1234] rounded-2xl text-white">
                   <div className="">
-                    <div className="font-bold text-[20px] pl-2">Level 1 / Semester 1</div>
+                    <div className="font-bold text-[20px] pl-2">Level 4 / Semester 2</div>
                   </div>
                   <div className="mt-[35px] ml-[300px]">
-                    <div className="text-[20px]">GPA:</div>
+                    <div className="text-[20px]">GPA:3.11</div>
                   </div>
                 </div>
               </div>
