@@ -18,10 +18,10 @@ const CourseCard = props => {
 
   return (
     <Card
-      style={{ marginTop: 16 }}
+      style={{ marginTop: 16 , border: '1px solid black' , marginBottom : '5px'}}
       type="inner"
       title={`Course ${props.realIndex}`}
-      extra={<Button onClick={() => props.deleteCourse(props.index)} type="danger" icon="delete"></Button>}
+      extra={<button onClick={() => props.deleteCourse(props.index)} className="rounded-full bg-[#F1B81F] text-black p-2  w-[150px] " >Delete</button>}
     >
       <Select
         style={{ width: 100 }}
