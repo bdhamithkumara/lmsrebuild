@@ -1,19 +1,10 @@
 import React from 'react'
+import GpaCal from '../components/gpacal/Index'
 
 const SGPAcalDetails = () => {
   return (
     <div>
-      <div>
-        <div>
-          gpa save gapa
-        </div>
-        <div>
-          table
-        </div>
-        <div>
-          button
-        </div>
-      </div>
+      <GpaCal/>
     </div>
   )
 }
